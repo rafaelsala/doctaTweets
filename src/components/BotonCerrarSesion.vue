@@ -35,7 +35,7 @@ export default {
   box-shadow: none;
   width: 250px;
   margin: 5px 1100px;
-  
+
 }
 .botonCerrar:hover {
   background-color: #e8cb27;

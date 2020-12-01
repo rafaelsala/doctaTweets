@@ -13,7 +13,7 @@ export default {
     components: {
         FormularioPublicacion,
         ListaPosts
-        
+
     },
     data(){
         return{

@@ -4,7 +4,7 @@
       <router-view></router-view>
       <footer-app></footer-app>
   </div>
-  
+
 </template>
 
 

@@ -42,30 +42,30 @@ export default {
       ingresar(){
             fetch('https://node-api-doctadevs.vercel.app/login',
             {
-                method: 'POST',
-                headers: {'Content-Type':'application/json'},
-                body: JSON.stringify({
-                        username: this.usuario,
-                        password: this.password,
-                        })
+              method: 'POST',
+              headers: {'Content-Type':'application/json'},
+              body: JSON.stringify({
+                username: this.usuario,
+                password: this.password,
+                })
             })
             .then(res => {
                 return res.json()
             })
             .then(result => {
-                if (result.error){
-                    this.error = result.message;
-                    return
-                }
-                sessionStorage.setItem('username', this.usuario);
-                sessionStorage.setItem("token", result.body.token);
-                this.username = "";
-                this.password = "";
+              if (result.error){
+                this.error = result.message;
+                return
+              }
+              sessionStorage.setItem('username', this.usuario);
+              sessionStorage.setItem("token", result.body.token);
+              this.username = "";
+              this.password = "";
 
-                this.$router.push({name: "Home"}); 
+              this.$router.push({name: "Home"}); 
             })
             .catch(err => {
-                console.log(err)
+              console.log(err)
             })
 
 

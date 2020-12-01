@@ -46,21 +46,21 @@ export default {
 		registrar(){
             fetch('https://node-api-doctadevs.vercel.app/users',
             {
-                method: 'POST',
-                headers: {'Content-Type':'application/json'},
-                body: JSON.stringify({
-                    "name": this.nombre,
-                    "username": this.usuario,
-                    "password": this.password
-                })
+              method: 'POST',
+              headers: {'Content-Type':'application/json'},
+              body: JSON.stringify({
+                "name": this.nombre,
+                "username": this.usuario,
+                "password": this.password
+              })
             })
-                .then(res => {
+              .then(res => {
                 return res.json()
-                })
-                .then(data => {
+              })
+              .then(data => {
                 console.log(data)
-                })
-                .catch(err => {
+              })
+              .catch(err => {
                 console.log(err)
             })
             //para limpiar el form
@@ -70,7 +70,6 @@ export default {
             //ruta a Login despues del registro
             this.$router.push({name: "Login"})
         }
-        
     },
 }
 

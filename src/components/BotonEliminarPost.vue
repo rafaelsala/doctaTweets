@@ -29,8 +29,6 @@ export default {
   border-radius: 3px;
   box-shadow: none;
   width: 100px;
-  
-  
 }
 .botonEliminarPost:hover {
   background-color: #e8cb27;

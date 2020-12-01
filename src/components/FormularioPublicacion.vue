@@ -30,9 +30,9 @@ export default {
                 },
                 body: JSON.stringify({
 
-                        autor: sessionStorage.getItem('username'),
-                        mensaje: this.publicacion
-                    }
+                    autor: sessionStorage.getItem('username'),
+                    mensaje: this.publicacion
+                }
                 )
                 }
             )

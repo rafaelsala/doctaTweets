@@ -34,7 +34,7 @@ export default {
   box-shadow: none;
   width: 250px;
   margin: 5px 1100px;
-  
+
 }
 .botonEliminar:hover {
   background-color: #e8cb27;

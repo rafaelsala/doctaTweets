@@ -26,21 +26,21 @@ export default {
 <style>
 
 .contenedorHeader {
-    padding: 0px;
-    width: 100vw;
-    height: 15vh;
-    background-color: #ebd44f; 
-    border-radius: 0 0 20px 20px;
-    padding: 0px;
-    text-align: start;
+padding: 0px;
+width: 100vw;
+height: 15vh;
+background-color: #ebd44f; 
+border-radius: 0 0 20px 20px;
+padding: 0px;
+text-align: start;
 }
 
 .logo {
-    height: auto;
-    width: 20%;
+height: auto;
+width: 20%;
 }
 
 .menu {
-    padding: 1px; 
+padding: 1px; 
 }
 </style>
