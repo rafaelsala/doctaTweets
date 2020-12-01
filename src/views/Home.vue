@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="home">
+        <formulario-publicacion :URL='URL'></formulario-publicacion>
+        <lista-posts :URL='URL'></lista-posts>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import FormularioPublicacion from '@/components/FormularioPublicacion'
+import ListaPosts from '@/components/ListaPosts'
+
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    name: 'Home',
+    components: {
+        ListaPosts,
+        FormularioPublicacion
+    },
+    data() {
+        return {
+            URL: `https://node-api-doctadevs.vercel.app/posts`
+        }
+    },
 }
 </script>
+
+<style lang="">
+    
+</style>
